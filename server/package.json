@@ -1,13 +1,24 @@
 {
-  "name": "quickstarts",
-  "version": "0.0.1",
-  "author": "Algolia Samples",
-  "license": "MIT",
+  "name": "chatbot-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "node src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "algoliasearch": "^4.17.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.2",
+    "langchain": "^0.0.96"
   },
   "devDependencies": {
-    "algoliasearch": "^4.10.5",
-    "dotenv": "^10.0.0"
+    "nodemon": "^2.0.22"
   }
 }
