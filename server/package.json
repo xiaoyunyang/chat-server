@@ -4,7 +4,7 @@
   "author": "Algolia Samples",
   "license": "MIT",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node src/index.js"
   },
   "devDependencies": {
     "algoliasearch": "^4.10.5",
