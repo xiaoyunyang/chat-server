@@ -20,7 +20,7 @@ const index = client.initIndex(ALGOLIA_INDEX_NAME);
 
 // Add new objects to the index
 // https://www.algolia.com/doc/api-reference/api-methods/add-objects/
-const newObject = { objectID: 1, name: "Foo" };
+const newObject = { objectID: 1, name: "Jankowski" };
 
 index
   .saveObjects([newObject])
@@ -31,7 +31,8 @@ index
     console.log(response);
     // Search the index for "Fo"
     // https://www.algolia.com/doc/api-reference/api-methods/search/
-    index.search("Fo").then((objects) => console.log(objects)).catch();
+    index.search("Jankowski").then((objects) => {
+      console.log("response....")
+      console.log(objects)
+    }).catch();
   }) ;
-
-
